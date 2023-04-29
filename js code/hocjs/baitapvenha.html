@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // tìm max min của 4 số 
+        var a,b,c,d,max,min;
+        a=parseFloat(prompt("nhập số thứ nhất: "));
+        b=parseFloat(prompt("nhập số thứ ha: "));
+        c=parseFloat(prompt("nhập số thứ ba: "));
+        d=parseFloat(prompt("nhập số thứ tư: "));
+        // if(a>=b && a>=c && a>=d) max=a;
+        // else if(b>=a && b>=c && b>=d) max=b;
+        // else if(c>=a && c>=b && c>=d) max=c;
+        // else if(d>=a && d>=c && d>=b) max=d;
+
+        // if(a<=b && a<=c && a<=d) min=a;
+        // else if(b<=a && b<=c && b<=d) min=b;
+        // else if(c<=a && c<=b && c<=d) min=c;
+        // else if(d<=a && d<=c && d<=b) min=d;
+        // alert("max="+max);
+        // alert("min= "+min); 
+        max=a;
+        if(max<=b) max=b;
+        if(max<=c) max=c;
+        if(max<=d) max=d;
+        document.write("max của 4 số"+a+"Và "+b+"và "+c+"và "+d+"="+max);
+        min=a;
+        if(min>=b) min=b;
+        if(min>=c) min=c;
+        if(min>=d) min=d;
+        document.write("<br>min của 4 số"+a+"Và "+b+"và "+c+"và "+d+"="+min);
+    </script>
+</body>
+</html>

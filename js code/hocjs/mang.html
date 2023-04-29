@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var number=[1,2,3,"quyen"];
+        console.log(number.toString());//đổi phần tử mảng thành dạng chuỗi
+        console.log(number.join('_'));
+        console.log(number.pop()); //xóa phần từ cuối cùng của mảng và trả về phần tử dã xóa 
+        console.log(number.push('hoa',5)); //chèn phần tử vào mảng
+        console.log(number.shift()); // xóa phần tử đầu tiền của mảng
+        console.log(number.unshift('java')); //thêm phần tử vào đâu mảng
+        number.splice(1,2,'php'); //trỏ đến vị trí muốn chọn-xóa phần tử tính từ vị trí trọn-thêm phần tử ngay vị trí đã xóa
+        var number2=[7,8,9];
+
+        console.log(number);
+        console.log(number.concat(number2)); //hợp nhất hai mảng lại với nhau
+        console.log(number.slice(1,2));
+        
+        number[2]="js"; //thay đổi phần tử của mảng
+        
+        document.write(number);
+
+    </script>
+</body>
+</html>

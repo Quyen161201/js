@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function nhap(){ 
+          return  Number(prompt('a['+i+']='));
+        } 
+        var n,a,i,tong;
+        tong=0;
+        a=[n];
+        n=Number(prompt('nhập n='));
+        if(n>0){
+            document.write('mảng bạn vừa nhập là:<br>');
+            for(i=0;i<n;i++){
+                a[i]=nhap();
+                document.write('a['+i+']='+a[i]+'<br>');
+            }
+            for(i=0;i<n;i++){
+               tong+=a[i];
+            }
+            document.write('tổng phần tử trong mảng: a='+tong);
+        }
+    </script>
+</body>
+</html>

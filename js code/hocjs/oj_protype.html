@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        function Sv(msv,hoten,nganh){
+            this.msv=msv;
+            this.hoten=hoten;
+            this.nganh=nganh;
+        }
+        //oject prototype
+        Sv.prototype.khoahoc='K15';
+        Sv.prototype.Getsv=function(){
+            return `${this.msv} ${this.hoten}`;
+            
+        }
+        var Sv1= new Sv('222A01',"Lê Khả Quyền",'Cntt');
+        console.log(Sv1.khoahoc);
+        console.log(Sv1.Getsv());
+    </script>
+    
+</body>
+</html>

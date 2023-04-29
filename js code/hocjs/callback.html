@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      
+    Array.prototype.map2=function(callback){
+        var arrayLength=this.length;
+        var output=[];
+        for(var i=0;i<arrayLength;++i){
+          var ketqua=callback(this[i],i);
+           output.push(ketqua);
+        }
+        return output;
+    };
+    mangs=[
+        'java',
+        'js',
+        'php'
+      ];
+      function a(mang){
+        return(`<h2>${mang}</h2>`);
+      }
+    var htmls=mangs.map2(a);
+    console.log(htmls);
+
+    //   var htmls = mangs.map(function(mang){
+    //     return(`<h2>${mang}</h2>`);
+    //   }); 
+    //   console.log(htmls.join(''));
+    </script>
+</body>
+</html>

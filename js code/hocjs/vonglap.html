@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var min,max,tg,n;
+       var a=[n];
+       n=Number(prompt("nhập n"));
+       if(n>0){
+            document.write("Mảng bạn vừa nhập vào là : <br>")
+            for(var i=0;i<n;i++) {
+                //nhập vào một mảng
+                a[i] =Number(prompt("a["+i+"]="));
+                document.write("a["+i+"]="+a[i]+"<br>");
+            }
+            document.write("Sắp xếp tăng dần<br>");
+            for(var i=0;i<n;i++){
+                for(var j=i+1;j<n;j++){
+                    if(a[i]>a[j]){
+                        tg=a[i];
+                        a[i]=a[j];
+                        a[j]=tg;  
+                    }       
+        }
+            document.write("a["+i+"]="+a[i]+"<br>");
+            min=a[0];
+       } 
+       
+       // sắp xếp giảm dần
+       document.write("Sắp xếp giảm dần <br>");
+       for(var i=0;i<n;i++){  
+        for(var j=i+1;j<5;j++){ 
+            if(a[i]<a[j]){
+                tg=a[i];
+                a[i]=a[j];
+                a[j]=tg;
+            }
+        }
+        max=a[0];
+        document.write("a["+i+"]="+a[i]+"<br>");
+        
+    }   document.write("<br>min="+min+"");
+        document.write("<br>max= "+max);
+           
+       }
+       
+    //    // tìm max
+    //    for(var i=0;i<n;i++){  
+    //     for(var j=i+1;j<5;j++){ 
+    //         max=a[0]; 
+    //         if(max<a[j]){
+    //             max=a[j];
+    //         }
+    //     }
+    //    }
+    //    document.write("max="+max+"<br>");
+       
+
+        
+    </script>
+</body>
+</html>

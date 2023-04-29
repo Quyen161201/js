@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       function tinhtong(a,b){
+        return a+b;
+       }
+      console.log(tinhtong(4,5));
+
+      function mang(b){
+        console.log("js");
+      }
+      mang();
+
+      function thamso(c){
+        console.log(typeof c);
+      }
+      thamso("react");
+
+      function arg(){
+        console.log(arguments);
+      }
+      arg(1,2,3);
+
+    //   for of 
+    function for_of() {
+        var str='';
+        for(var d of arguments){
+            str+=`${d} - `; 
+        }
+        console.log(str);
+    }
+   console.log(for_of("mot","hai","ba"));
+   
+    
+    </script>
+</body>
+</html>

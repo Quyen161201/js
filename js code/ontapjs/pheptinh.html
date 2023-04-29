@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a,b,pt,tong,hieu,tich,thuong;
+        do{
+            a=parseInt(prompt('nhập a= '));
+            b=parseInt(prompt('nhập b= '));
+            pt=prompt('nhập phép toán: ');
+            switch(pt){
+                case '+': {
+                    alert('Phép cộng '+a+'+'+b);
+                    tong=a+b;
+                    alert('tổng='+tong);
+                    break;
+                }
+                case '*': {
+                    alert('Phép nhân '+a+'*'+b);
+                    tich=a*b;
+                    alert('tích='+tich);
+                    break;
+                }
+                case '-': {
+                    alert('Phép trừ '+a+'-'+b);
+                    hieu=a-b;
+                    alert('Hiệu='+hieu);
+                    break;
+                }
+                case '/': {
+                    alert('Phép chia '+a+'/'+b);
+                    thuong=a/b;
+                    alert('Thương='+thuong);
+                    break;
+                }
+                default: alert('Bạn nhập sai phép tính:+ - * /');
+                break;
+            } 
+            
+           
+           var tt=confirm('Bạn muốn tiếp tục không');
+        }
+        while(tt);
+    </script>
+
+</body>
+</html>

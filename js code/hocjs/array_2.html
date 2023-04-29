@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // forecach()
+        // every ()
+        // some ()
+        // find ()
+        // filter ()
+        // map ()
+        // reduce ()
+
+        var a=[
+            {
+                id:1,
+                name:'js',
+                coin:0,
+            },
+            {
+                id:2,
+                name:'php',
+                coin:0
+            },
+            {
+                id:3,
+                name:'c++',
+                coin:0
+            },
+            {
+                id:4,
+                name:'c#',
+                coin:0
+            },
+            {
+                id:5,
+                name:'java',
+                coin:0
+            },
+            {
+                id:6,
+                name:'python',
+                coin:0
+            },
+        ];
+        // forEach
+        // a.forEach(function(b,index){
+        //     console.log(index,b);
+        // });
+
+        // every 
+    //    var b= a.every(function(c,index){
+    //         return c.coin===0;
+    //     })
+    //     console.log(b);
+        // map
+        function a2(a, index){
+            return{
+                id: a.id,
+                name: `khoa hoc: ${a.name}`,
+                coin:a.coin,
+                conitext:`Gia: ${a.coin}`,
+                index:index,
+            } 
+        };
+        
+        var newa=a.map(a2);
+        console.log(newa);
+
+        coin=[100,200,10,300];
+        var total= coin.reduce(function(a,b){
+            return a+b;
+        },0)
+        console.log(total);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //  function User(ho,ten,anh) {
+        //     this.ho=ho;
+        //     this.ten=ten;
+        //     this.anh=anh;
+        //     this.getName=function() {
+        //         return `${quantri.ho} ${quantri.ten}`;
+        //     }
+        //  }
+        //  var quantri= new User('kha','quyen','avatar');
+        //  var nguoidung= new User('nguyen','trang','avatar');
+        //  quantri.tieude= 'chia se';
+        //  nguoidung.binhluan= 'con hàng không';
+        //  console.log(quantri.getName());
+        // function Thongtin(diachi,tuoi,ngaysinh) {
+        //     this.diachi=diachi;
+        //     this.tuoi=tuoi;
+        //     this.ngaysinh=ngaysinh;
+        //     this.getThongtin= function() {
+        //         return `${this.diachi} ${this.tuoi}`;
+        //     }
+        // }
+        // var quantri= new Thongtin("Thanh Hóa",20,"16-12-2001");
+        // var nguoidung= new Thongtin("Hà Nội",19,"17-02-2003");
+        // console.log(quantri.ngaysinh);
+        // console.log(nguoidung.getThongtin());
+        // function sanpham(ten,soluong,gia){
+        //     this.ten=ten;
+        //     this.soluong=soluong;
+        //     this.gia=gia;
+        //     this.getsanpham=function() {
+        //         return `${this.ten} - ${this.gia}`;
+        //     }
+        // }
+        // var nuocloc= new sanpham('aquada',20,"10.000 vnđ");
+        // var nuocmam= new sanpham("chinsu",30,"40.000vnđ");
+        // console.log(nuocloc);
+        // document.write(nuocloc.ten);
+        // console.log(nuocmam.getsanpham());
+        function Sv(msv,hoten,nganh){
+            this.msv=msv;
+            this.hoten=hoten;
+            this.nganh=nganh;
+            this.Getsv=function(){
+                return `${this.msv} ${this.hoten} ${this.nganh}`;//temolate literal
+            }
+
+        }
+        var Sv1= new Sv('222A1',"Lê Khả Quyền","Cntt");
+        var Sv2= new Sv('222a2',"Lê Văn B","CNTT");
+        // console.log(Sv1,Sv2);
+        console.log(Sv1.Getsv(),Sv2.Getsv());
+
+    </script>
+</body>
+</html>
